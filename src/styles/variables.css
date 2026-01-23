@@ -1,0 +1,99 @@
+:root {
+  /* Shapes & Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  --max-width-container: 1200px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --font-family-base: var(--font-main), system-ui, sans-serif;
+  --font-family-heading: var(--font-main), system-ui, sans-serif;
+}
+
+/* Light Theme (Default - SaaS Style) */
+[data-theme='light'] {
+  /* Navy Blue Theme (Requested) */
+  --color-primary: #0F172A;
+  /* Slate 900 - Deep Navy */
+  --color-primary-dark: #020617;
+  /* Slate 950 */
+  --color-on-primary: #FFFFFF;
+
+  --color-secondary: #334155;
+  /* Slate 700 */
+  --color-on-secondary: #FFFFFF;
+
+  --color-background: #FFFFFF;
+  --color-surface: #F9FAFB;
+  /* Very light gray for sections */
+  --color-surface-card: #FFFFFF;
+  /* White cards */
+
+  --color-text-main: #101828;
+  /* Dark SaaS Gray */
+  --color-text-secondary: #475467;
+  --color-text-tertiary: #667085;
+
+  --color-border: #EAECF0;
+  --color-outline: #D0D5DD;
+
+  --shadow-sm: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-md: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+  --shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+
+  --header-bg: rgba(255, 255, 255, 0.95);
+
+  --state-hover: rgba(0, 0, 0, 0.04);
+}
+
+/* Dark Theme - SaaS Dark Mode */
+[data-theme='dark'] {
+  --color-primary: #60A5FA;
+  /* Blue 400 */
+  --color-primary-dark: #3B82F6;
+  --color-on-primary: #0F172A;
+
+  --color-secondary: #94A3B8;
+  /* Slate 400 */
+  --color-on-secondary: #0F172A;
+
+  --color-background: #0C111D;
+  /* Very Dark Blue-Gray */
+  --color-surface: #101828;
+  --color-surface-card: #161B22;
+  /* Slightly lighter card */
+
+  --color-text-main: #F9FAFB;
+  --color-text-secondary: #98A2B3;
+  --color-text-tertiary: #667085;
+
+  --color-border: #1D2939;
+  --color-outline: #344054;
+
+  --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0px 4px 8px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0px 12px 16px -4px rgba(0, 0, 0, 0.4);
+
+  --header-bg: rgba(12, 17, 29, 0.9);
+
+  --state-hover: rgba(255, 255, 255, 0.04);
+}
+
+/* Base Transition */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
