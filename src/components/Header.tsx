@@ -14,6 +14,8 @@ export default function Header() {
                     <Link href="/videos" className={styles.navLink}>Videos</Link>
                     <Link href="/podcasts" className={styles.navLink}>Podcasts</Link>
                     <Link href="/books" className={styles.navLink}>Books</Link>
+                    <a href="https://whoisalexmerced.com" target="_blank" rel="noopener noreferrer" className={styles.navLink}>WhoIsAlexMerced.com</a>
+                    <a href="https://alexmerced.com" target="_blank" rel="noopener noreferrer" className={styles.navLink}>AlexMerced.com</a>
                 </nav>
                 <button className={styles.mobileMenuBtn} aria-label="Menu">
                     ☰
