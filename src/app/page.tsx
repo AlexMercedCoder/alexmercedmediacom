@@ -69,7 +69,7 @@ export default async function Home() {
             </div>
           </div>
           <div className={styles.heroImageWrapper}>
-            <img src="/hero.jpg" alt="Alex Merced Speaking" className={styles.heroImageSaaS} />
+            <img src="/hero.png" alt="Alex Merced Speaking" className={styles.heroImageSaaS} />
             <div className={styles.heroBlob}></div>
           </div>
         </div>
