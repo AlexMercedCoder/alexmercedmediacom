@@ -111,6 +111,20 @@ export const MEDIA_DATA: MediaConfig = {
             year: "2018",
             url: "https://www.amazon.com/Profits-are-Generosity-Entrepreneurship-Philanthropy/dp/1387798421",
             coverImage: "/covers/cover-profits-are-generosity.png"
+        },
+        {
+            title: "The Book on Using Apache Iceberg with Python",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GNTGT1K2",
+            coverImage: "/covers/cover-iceberg-python.jpg"
+        },
+        {
+            title: "The Book on Agentic Analytics: Building the Data Architecture for Autonomous AI",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GMDHWL14",
+            coverImage: "/covers/cover-agentic-analytics.jpg"
         }
     ]
 };

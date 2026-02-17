@@ -39,7 +39,9 @@
 | Apache Polaris: The Definitive Guide | O’Reilly Media | 2025 | https://www.oreilly.com/library/view/apache-polaris-the/9781098175481 |
 | Architecting an Apache Iceberg Lakehouse | Manning Publications | 2026 | https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse |
 | The Libertarian Heart | Lulu Press | 2019 | https://www.lulu.com/shop/alex-merced/the-libertarian-heart/paperback/product-1e9k7v7.html |
-| Profits are Generosity, Entrepreneurship is Philanthropy: Principles of a World of Minimal Force and Maximum Voluntarism | Lulu Press | 2018 | https://www.amazon.com/Profits-are-Generosity-Entrepreneurship-Philanthropy/dp/1387798421/ref=sr_1_1?crid=1VRYZUT99JKJ&dib=eyJ2IjoiMSJ9.nC0GDIO2OaXtWVMn37Q6hMqDrbDVYIoMKX9Z51bG02bGjHj071QN20LucGBJIEps.kS54jFbimX5wEEF9Uc--BHMrWXc-co2gKIJ4aJCVch4&dib_tag=se&keywords=Profits+are+Generosity&qid=1769139553&sprefix=profits+are+generosity%2Caps%2C212&sr=8-1 |
+| Profits are Generosity, Entrepreneurship is Philanthropy: Principles of a World of Minimal Force and Maximum Voluntarism | Lulu Press | 2018 | https://www.amazon.com/Profits-are-Generosity-Entrepreneurship-Philanthropy/dp/1387798421 |
+| The Book on Using Apache Iceberg with Python: PyIceberg, PySpark, Datafusion and more | Alex Merced Books | 2026 | https://www.amazon.com/dp/B0GNTGT1K2 |
+| The Book on Agentic Analytics: Building the Data Architecture for Autonomous AI | Alex Merced Books | 2026 | https://www.amazon.com/dp/B0GMDHWL14 |
 
 ---
 
