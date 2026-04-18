@@ -42,21 +42,33 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Alex Merced",
-  "url": "https://alexmercedmedia.com",
-  "sameAs": [
-    "https://twitter.com/alexmercedcoder",
-    "https://www.linkedin.com/in/alexmerced",
-    "https://github.com/alexmercedcoder",
-    "https://www.youtube.com/@AlexMercedCoder"
-  ],
-  "jobTitle": "Developer Advocate",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Dremio"
-  },
-  "description": "Instructional advocate helping developers master the Data Lakehouse ecosystem."
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Alex Merced Media",
+      "url": "https://alexmercedmedia.com",
+      "description": "The central hub for Alex Merced's work in Developer Relations, Data Engineering, Apache Iceberg, and Libertarian philosophy.",
+      "publisher": { "@id": "https://alexmercedmedia.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://alexmercedmedia.com/#person",
+      "name": "Alex Merced",
+      "url": "https://alexmercedmedia.com",
+      "sameAs": [
+        "https://twitter.com/alexmercedcoder",
+        "https://www.linkedin.com/in/alexmerced",
+        "https://github.com/alexmercedcoder",
+        "https://www.youtube.com/@AlexMercedCoder"
+      ],
+      "jobTitle": "Developer Advocate",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Dremio"
+      },
+      "description": "Instructional advocate helping developers master the Data Lakehouse ecosystem."
+    }
+  ]
 };
 
 import Header from '@/components/Header';
