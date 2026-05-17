@@ -10,6 +10,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alexmercedmedia.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Alex Merced | Developer Relations & Data Engineering",
   description: "The central hub for Alex Merced's work in Developer Relations, Data Engineering, Apache Iceberg, and Libertarian philosophy.",
   openGraph: {
@@ -59,7 +63,11 @@ const jsonLd = {
         "https://twitter.com/alexmercedcoder",
         "https://www.linkedin.com/in/alexmerced",
         "https://github.com/alexmercedcoder",
-        "https://www.youtube.com/@AlexMercedCoder"
+        "https://www.youtube.com/@AlexMercedCoder",
+        "https://alexmerced.com",
+        "https://alexmerceddata.com",
+        "https://books.alexmerced.com",
+        "https://whoisalexmerced.com"
       ],
       "jobTitle": "Developer Advocate",
       "worksFor": {

@@ -12,6 +12,10 @@ export default function Footer() {
                     <a href="https://twitter.com/alexmercedcoder" target="_blank" rel="noopener noreferrer" className={styles.link}>Twitter</a>
                     <a href="https://linkedin.com/in/alexmerced" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
                     <a href="https://github.com/alexmercedcoder" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</a>
+                    <a href="https://alexmerced.com" target="_blank" rel="noopener noreferrer" className={styles.link}>AlexMerced.com</a>
+                    <a href="https://alexmerceddata.com" target="_blank" rel="noopener noreferrer" className={styles.link}>AlexMercedData.com</a>
+                    <a href="https://books.alexmerced.com" target="_blank" rel="noopener noreferrer" className={styles.link}>Books</a>
+                    <a href="https://whoisalexmerced.com" target="_blank" rel="noopener noreferrer" className={styles.link}>Who Is Alex Merced</a>
                 </div>
             </div>
         </footer>
