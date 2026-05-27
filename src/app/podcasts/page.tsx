@@ -47,7 +47,7 @@ export default async function PodcastsPage() {
                                 key={`${episode.link}-${index}`}
                                 episode={episode}
                                 showName={episode.showName || 'Podcast'}
-                                coverImage={(episode as any).coverImage}
+                                coverImage={episode.coverImage}
                             />
                         ))}
                     </div>

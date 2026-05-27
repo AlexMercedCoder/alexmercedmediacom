@@ -10,6 +10,9 @@ export interface YouTubeVideo {
 }
 
 const parser = new Parser({
+    headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    },
     customFields: {
         item: [
             ['yt:videoId', 'videoId'],
@@ -25,8 +28,12 @@ export async function fetchLatestYouTubeVideos(channelId: string): Promise<YouTu
         const feed = await parser.parseURL(feedUrl);
 
         return feed.items.map(item => {
-            const mediaGroup = item['mediaGroup'] as any;
-            const thumbnail = mediaGroup && mediaGroup['media:thumbnail'] ? mediaGroup['media:thumbnail'][0].$.url : '';
+            const mediaGroup = item['mediaGroup'] as {
+                'media:thumbnail'?: Array<{ $: { url: string } }>;
+            } | undefined;
+            const thumbnail = mediaGroup && mediaGroup['media:thumbnail'] && mediaGroup['media:thumbnail'][0] 
+                ? mediaGroup['media:thumbnail'][0].$.url 
+                : '';
 
             return {
                 id: item['videoId'],

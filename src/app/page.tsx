@@ -111,7 +111,7 @@ export default async function Home() {
                 key={`${ep.link}-${index}`}
                 episode={ep}
                 showName={ep.showName || ''}
-                coverImage={(ep as any).coverImage}
+                coverImage={ep.coverImage}
               />
             ))}
           </div>

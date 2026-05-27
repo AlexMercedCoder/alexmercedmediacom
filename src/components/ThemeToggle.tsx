@@ -4,16 +4,17 @@ import { useEffect, useState } from 'react';
 import styles from './ThemeToggle.module.css';
 
 export default function ThemeToggle() {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('light');
 
     useEffect(() => {
         // Check local storage or system preference
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setTheme(savedTheme);
             document.documentElement.setAttribute('data-theme', savedTheme);
         } else {
-            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.setAttribute('data-theme', 'light');
         }
     }, []);
 

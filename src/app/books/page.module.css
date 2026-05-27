@@ -4,10 +4,9 @@
 }
 
 .header {
-    background: var(--md-sys-color-surface-1);
+    background: var(--color-surface);
     padding: var(--space-16) 0 var(--space-8);
-    margin-bottom: var(--space-12);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .container {
@@ -18,32 +17,169 @@
 
 .pageTitle {
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-3xl);
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 800;
     color: var(--color-text-main);
-    margin-bottom: var(--space-4);
-    background: linear-gradient(135deg, #90CAF9 0%, #E3F2FD 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    display: inline-block;
+    margin-bottom: var(--space-2);
+    letter-spacing: -0.02em;
 }
 
 .pageSubtitle {
-    font-size: var(--font-size-lg);
+    font-size: 1.125rem;
     color: var(--color-text-secondary);
     max-width: 600px;
+    line-height: 1.5;
+}
+
+.filtersSection {
+    padding: var(--space-6) 0;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--space-8);
+}
+
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+}
+
+.tabs {
+    display: flex;
+    gap: var(--space-2);
+    overflow-x: auto;
+    padding-bottom: var(--space-1);
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabs::-webkit-scrollbar {
+    height: 4px;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: var(--radius-full);
+}
+
+.tab {
+    padding: 10px 18px;
+    border-radius: var(--radius-full);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background: var(--color-surface-card);
+    border: 1px solid var(--color-border);
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.tab:hover {
+    color: var(--color-text-main);
+    background: var(--state-hover);
+    border-color: var(--color-outline);
+}
+
+.activeTab {
+    background: var(--color-primary);
+    color: var(--color-on-primary) !important;
+    border-color: var(--color-primary);
+}
+
+.searchWrapper {
+    position: relative;
+    flex-grow: 1;
+    max-width: 400px;
+    min-width: 280px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 11px 40px 11px 16px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-card);
+    color: var(--color-text-main);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.searchClear {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--color-text-tertiary);
+    cursor: pointer;
+    padding: var(--space-1);
+    line-height: 1;
+}
+
+.searchClear:hover {
+    color: var(--color-text-main);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
     gap: var(--space-8);
 }
 
-@media (max-width: 768px) {
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-16) var(--space-6);
+    text-align: center;
+    background: var(--color-surface-card);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.emptyIcon {
+    width: 48px;
+    height: 48px;
+    color: var(--color-text-tertiary);
+    margin-bottom: var(--space-4);
+}
+
+.emptyState h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: var(--space-2);
+}
+
+.emptyState p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 992px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .filterBar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .searchWrapper {
+        max-width: 100%;
+        min-width: 100%;
     }
 }

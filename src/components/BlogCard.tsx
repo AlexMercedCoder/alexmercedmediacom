@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './BlogCard.module.css';
 import { BlogPost } from '@/lib/types';
 

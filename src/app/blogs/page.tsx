@@ -3,7 +3,6 @@ import BlogCard from '@/components/BlogCard';
 import { fetchRSS } from '@/lib/rss';
 import { MEDIA_DATA } from '@/lib/data';
 import { BlogPost } from '@/lib/types';
-import Link from 'next/link';
 
 export const revalidate = 3600; // Revalidate every hour
 

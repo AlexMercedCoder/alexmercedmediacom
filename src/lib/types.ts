@@ -5,6 +5,11 @@ export interface BlogPost {
     contentSnippet?: string;
     source: string;
     tags?: string[];
+    enclosure?: {
+        url: string;
+        type?: string;
+        length?: string | number;
+    };
 }
 
 export interface VideoConfig {
@@ -37,6 +42,8 @@ export interface BookConfig {
     year: string;
     url: string;
     coverImage?: string;
+    category?: 'tech' | 'economics' | 'fiction';
+    description?: string;
 }
 
 export interface MediaConfig {
