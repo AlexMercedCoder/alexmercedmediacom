@@ -52,11 +52,12 @@ const jsonLd = {
       "name": "Alex Merced Media",
       "url": "https://alexmercedmedia.com",
       "description": "The central hub for Alex Merced's work in Developer Relations, Data Engineering, Apache Iceberg, and Libertarian philosophy.",
-      "publisher": { "@id": "https://alexmercedmedia.com/#person" }
+      "author": { "@id": "https://alexmerced.com/#alexmerced" },
+      "publisher": { "@id": "https://alexmerced.com/#alexmerced" }
     },
     {
       "@type": "Person",
-      "@id": "https://alexmercedmedia.com/#person",
+      "@id": "https://alexmerced.com/#alexmerced",
       "name": "Alex Merced",
       "url": "https://alexmercedmedia.com",
       "sameAs": [
