@@ -38,6 +38,14 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'CCBot',
         allow: '/',
+      },
+      {
+        userAgent: 'Applebot-Extended',
+        allow: '/',
+      },
+      {
+        userAgent: 'FacebookBot',
+        allow: '/',
       }
     ],
     sitemap: 'https://alexmercedmedia.com/sitemap.xml',
