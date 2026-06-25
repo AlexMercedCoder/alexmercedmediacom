@@ -325,28 +325,108 @@ export const MEDIA_DATA: MediaConfig = {
             publisher: "Lulu Press",
             year: "2019",
             url: "https://www.lulu.com/shop/alex-merced/the-libertarian-heart/paperback/product-1e9k7v7.html",
-            coverImage: "/covers/cover-libertarian-heart.png"
+            coverImage: "/covers/cover-libertarian-heart.png",
+            category: "economics",
+            description: "A philosophical exploration of consent, individual peace, and the moral foundations of a free society."
         },
         {
             title: "Profits are Generosity, Entrepreneurship is Philanthropy",
             publisher: "Lulu Press",
             year: "2018",
             url: "https://www.amazon.com/Profits-are-Generosity-Entrepreneurship-Philanthropy/dp/1387798421",
-            coverImage: "/covers/cover-profits-are-generosity.png"
+            coverImage: "/covers/cover-profits-are-generosity.png",
+            category: "economics",
+            description: "An economic philosophy book arguing that voluntary exchange and entrepreneurship are the most generous forms of social contribution."
         },
         {
-            title: "The Book on Using Apache Iceberg with Python",
+            title: "The Semantic Rebellion",
             publisher: "Alex Merced Books",
             year: "2026",
-            url: "https://www.amazon.com/dp/B0GNTGT1K2",
-            coverImage: "/covers/cover-iceberg-python.jpg"
+            url: "https://www.amazon.com/dp/B0GPMNX78W",
+            coverImage: "https://images.amazon.com/images/P/B0GPMNX78W.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "A sci-fi novel following a data engineer's journey through a rapidly changing world shaped by AI and shifting power dynamics."
         },
         {
-            title: "The Book on Agentic Analytics: Building the Data Architecture for Autonomous AI",
+            title: "The Emperors of A.I. Valley",
             publisher: "Alex Merced Books",
             year: "2026",
-            url: "https://www.amazon.com/dp/B0GMDHWL14",
-            coverImage: "/covers/cover-agentic-analytics.jpg"
+            url: "https://www.amazon.com/dp/B0GQHKF4ZT",
+            coverImage: "https://images.amazon.com/images/P/B0GQHKF4ZT.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "A near-future thriller exploring power struggles, corporate intrigue, and moral dilemmas in an AI-dominated Silicon Valley."
+        },
+        {
+            title: "The Federation of Tides",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GPRBTV6W",
+            coverImage: "https://images.amazon.com/images/P/B0GPRBTV6W.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "An epic fantasy adventure following a narwhal on a journey seeking knowledge across oceanic civilizations."
+        },
+        {
+            title: "Plastic Punk",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GQGRFW2H",
+            coverImage: "https://images.amazon.com/images/P/B0GQGRFW2H.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "A genre-bending novel exploring economic systems, societal structures, and individual agency in a stylized world."
+        },
+        {
+            title: "Embers of Claim",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GQGW7VCY",
+            coverImage: "https://images.amazon.com/images/P/B0GQGW7VCY.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "The first book in an epic fantasy trilogy, introducing a world of competing kingdoms, ancient magic, and rising conflict."
+        },
+        {
+            title: "Crowns and Wings",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GQGHYL79",
+            coverImage: "https://images.amazon.com/images/P/B0GQGHYL79.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "The second book in the epic fantasy trilogy, deepening the political intrigue and expanding the world's mythology."
+        },
+        {
+            title: "Thrones of Ash and Sky",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GQCHRYHV",
+            coverImage: "https://images.amazon.com/images/P/B0GQCHRYHV.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "The concluding volume of the trilogy, bringing the saga of kingdoms, magic, and destiny to its climax."
+        },
+        {
+            title: "Tales of Fur and Sky: Echoes of the Ages",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GQGRGH93",
+            coverImage: "https://images.amazon.com/images/P/B0GQGRGH93.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "A companion volume to the fantasy trilogy, expanding the lore with standalone tales set in the same world."
+        },
+        {
+            title: "AI and Agents for Normal People",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H59GBTMW",
+            coverImage: "https://m.media-amazon.com/images/I/71oCOTieqYL._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to using AI tools for everyday tasks, covering Gemini, NotebookLM, ChatGPT, Claude, and local agent workflows without technical jargon."
+        },
+        {
+            title: "The No Lock-in Apache Iceberg Lakehouse with Agentic Analytics",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H49TDNX3",
+            coverImage: "https://m.media-amazon.com/images/I/71bHiNYCPyL._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to building a portable Apache Iceberg lakehouse with open catalogs, agentic analytics, and AI-ready data platforms while avoiding vendor lock-in."
         }
     ]
 };
