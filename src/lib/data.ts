@@ -427,6 +427,96 @@ export const MEDIA_DATA: MediaConfig = {
             coverImage: "https://m.media-amazon.com/images/I/71bHiNYCPyL._SY522_.jpg",
             category: "tech",
             description: "A practical guide to building a portable Apache Iceberg lakehouse with open catalogs, agentic analytics, and AI-ready data platforms while avoiding vendor lock-in."
+        },
+        {
+            title: "Being Productive with Google AI",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H77DBD83",
+            coverImage: "https://m.media-amazon.com/images/I/71mp4ume8xL._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to using Google's AI ecosystem including Gemini, NotebookLM, Veo, Gemini Spark, and Jules."
+        },
+        {
+            title: "Being Productive with Open Models",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H76JQ55R",
+            coverImage: "https://m.media-amazon.com/images/I/71J0MZoCf-L._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to using open models with Opencode, PI, and Hermes for AI-assisted development."
+        },
+        {
+            title: "Being Productive with Claude",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H76BTLMF",
+            coverImage: "https://m.media-amazon.com/images/I/81Zc9EI0yCL._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to Claude.ai, Claude Code, and Claude Dispatch for AI-powered development."
+        },
+        {
+            title: "Being Productive with OpenAI Codex",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H766477L",
+            coverImage: "https://m.media-amazon.com/images/I/71VVMIEsRCL._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to building documents, images, video, websites, and apps with an AI agent using OpenAI Codex."
+        },
+        {
+            title: "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 2",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GZVJB6ML",
+            coverImage: "https://m.media-amazon.com/images/I/71b1abVGM6L._SY522_.jpg",
+            category: "tech",
+            description: "A complete guide to SQL analytics, BI, and agentic AI for modern data platforms."
+        },
+        {
+            title: "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 1",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GZTXJQ1C",
+            coverImage: "https://m.media-amazon.com/images/I/71Yh+fIviFL._SY522_.jpg",
+            category: "tech",
+            description: "A complete guide to modern data systems, data engineering, analytics, and AI."
+        },
+        {
+            title: "Dremio and the Semantic Layer",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GWF7PFDG",
+            coverImage: "https://m.media-amazon.com/images/I/61EsmTHqTnL._SY522_.jpg",
+            category: "tech",
+            description: "The journey to providing meaning and context for AI with Dremio's semantic layer."
+        },
+        {
+            title: "Hands-On Agentic Engineering",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GWTZ1394",
+            coverImage: "https://m.media-amazon.com/images/I/718zXBgnjdL._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to building multi-agent systems with Apache Iceberg."
+        },
+        {
+            title: "The Lakehouse Built for Everyone",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GYL5Q5YV",
+            coverImage: "https://m.media-amazon.com/images/I/61GClrHVxIL._SY522_.jpg",
+            category: "tech",
+            description: "From laptop prototypes to enterprise-scale agentic AI with Apache Iceberg and Dremio."
+        },
+        {
+            title: "The Book on Apache Polaris",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0GZDVCV24",
+            coverImage: "https://m.media-amazon.com/images/I/71CLqSXeI2L._SY522_.jpg",
+            category: "tech",
+            description: "Building the open data lakehouse with the industry standard Iceberg REST catalog."
         }
     ]
 };
