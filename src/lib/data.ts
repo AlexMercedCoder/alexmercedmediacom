@@ -517,6 +517,24 @@ export const MEDIA_DATA: MediaConfig = {
             coverImage: "https://m.media-amazon.com/images/I/71CLqSXeI2L._SY522_.jpg",
             category: "tech",
             description: "Building the open data lakehouse with the industry standard Iceberg REST catalog."
+        },
+        {
+            title: "Being Productive with Grok and Cursor",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H7Z6RS5Y",
+            coverImage: "https://m.media-amazon.com/images/I/51+f2sIBG7L._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to the xAI and Cursor coding ecosystem covering Grok Chat, Grok Build, DeepSearch, Cursor Composer, Agent Mode, MCP servers, and local model runtimes."
+        },
+        {
+            title: "Being Productive with Microsoft Copilot",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0H7WZ19NJ",
+            coverImage: "https://m.media-amazon.com/images/I/71GdJ3aTnFL._SY522_.jpg",
+            category: "tech",
+            description: "A practical guide to the Microsoft Copilot ecosystem covering Copilot Chat, M365 Copilot, GitHub Copilot, Copilot Studio, Copilot Cowork, and Copilot Plus PC features."
         }
     ]
 };
