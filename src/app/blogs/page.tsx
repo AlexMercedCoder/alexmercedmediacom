@@ -20,8 +20,30 @@ async function getBlogPosts(): Promise<BlogPost[]> {
 export default async function BlogsPage() {
     const posts = await getBlogPosts();
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: posts.map((post, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            item: {
+                '@type': 'Article',
+                headline: post.title,
+                url: post.link,
+                datePublished: new Date(post.pubDate).toISOString(),
+                description: post.contentSnippet,
+                isPartOf: { '@type': 'Blog', name: post.source },
+                author: { '@id': 'https://alexmerced.com/#alexmerced' }
+            }
+        }))
+    };
+
     return (
         <main className={styles.main}>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <header className={styles.header}>
                 <div className={styles.container}>
                     <h1 className={styles.pageTitle}>Latest Articles</h1>

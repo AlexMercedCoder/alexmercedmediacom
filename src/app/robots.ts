@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
-        userAgent: 'Claude-Web',
+        userAgent: 'Meta-ExternalAgent',
         allow: '/',
       },
       {

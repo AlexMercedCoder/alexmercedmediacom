@@ -28,8 +28,25 @@ async function getAllPodcasts() {
 export default async function PodcastsPage() {
     const episodes = await getAllPodcasts();
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@graph': MEDIA_DATA.podcasts.map(show => ({
+            '@type': 'PodcastSeries',
+            name: show.name,
+            description: show.focus,
+            url: show.mainUrl,
+            webFeed: show.rssFeed,
+            image: show.coverImage ? `https://alexmercedmedia.com${show.coverImage}` : undefined,
+            author: { '@id': 'https://alexmerced.com/#alexmerced' }
+        }))
+    };
+
     return (
         <main className={styles.main}>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <header className={styles.header}>
                 <div className={styles.container}>
                     <h1 className={styles.pageTitle}>Podcasts</h1>

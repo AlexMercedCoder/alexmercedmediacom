@@ -68,7 +68,11 @@ const jsonLd = {
         "https://alexmerced.com",
         "https://alexmerceddata.com",
         "https://books.alexmerced.com",
-        "https://whoisalexmerced.com"
+        "https://whoisalexmerced.com",
+        "https://alexmerced.blog",
+        "https://amdatalakehouse.substack.com",
+        "https://loveatarian.substack.com",
+        "https://www.youtube.com/@AlexMercedData"
       ],
       "jobTitle": "Developer Advocate",
       "worksFor": {

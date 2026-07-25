@@ -25,8 +25,29 @@ async function getAllVideos(): Promise<YouTubeVideo[]> {
 export default async function VideosPage() {
     const videos = await getAllVideos();
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: videos.map((video, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            item: {
+                '@type': 'VideoObject',
+                name: video.title,
+                url: video.link,
+                thumbnailUrl: video.thumbnail,
+                uploadDate: new Date(video.pubDate).toISOString(),
+                author: { '@id': 'https://alexmerced.com/#alexmerced' }
+            }
+        }))
+    };
+
     return (
         <main className={styles.main}>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <header className={styles.header}>
                 <div className={styles.container}>
                     <h1 className={styles.pageTitle}>Latest Videos</h1>
