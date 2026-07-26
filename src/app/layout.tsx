@@ -37,7 +37,8 @@ export const metadata: Metadata = {
     title: "Alex Merced | Developer Relations & Data Engineering",
     description: "Bridging the gap between Data and People.",
     images: ["/hero.png"],
-    creator: "@AlexMercedCoder",
+    site: "@amdatalakehouse",
+    creator: "@amdatalakehouse",
   },
   icons: {
     icon: "/favicon.png",
@@ -94,7 +95,14 @@ export default function RootLayout({
 }>) {
   return (
 
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="light" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className={inter.variable}>
         <script
           type="application/ld+json"

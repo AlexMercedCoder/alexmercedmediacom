@@ -2,6 +2,20 @@ import styles from './page.module.css';
 import PodcastCard from '@/components/PodcastCard';
 import { fetchRSS } from '@/lib/rss';
 import { MEDIA_DATA } from '@/lib/data';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Podcasts | Alex Merced Media',
+    description: "Listen to the latest podcast episodes by Alex Merced on data engineering, the data lakehouse, Apache Iceberg, and the future of analytics and AI.",
+    alternates: { canonical: '/podcasts' },
+    openGraph: {
+        title: 'Podcasts | Alex Merced Media',
+        description: 'The latest podcast episodes by Alex Merced on data engineering and the data lakehouse.',
+        url: 'https://alexmercedmedia.com/podcasts',
+        type: 'website',
+        images: [{ url: '/hero.png', width: 1200, height: 630, alt: 'Alex Merced Media' }],
+    },
+};
 
 export const revalidate = 3600;
 

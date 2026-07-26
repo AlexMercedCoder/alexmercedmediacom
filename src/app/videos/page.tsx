@@ -2,6 +2,20 @@ import styles from './page.module.css';
 import VideoCard from '@/components/VideoCard';
 import { fetchLatestYouTubeVideos, YouTubeVideo } from '@/lib/youtube';
 import { MEDIA_DATA } from '@/lib/data';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Videos | Alex Merced Media',
+    description: "Watch the latest videos by Alex Merced — tutorials and talks on the data lakehouse, Apache Iceberg, Apache Polaris, query engines, and agentic analytics.",
+    alternates: { canonical: '/videos' },
+    openGraph: {
+        title: 'Videos | Alex Merced Media',
+        description: 'The latest videos by Alex Merced on the data lakehouse, Apache Iceberg, and agentic analytics.',
+        url: 'https://alexmercedmedia.com/videos',
+        type: 'website',
+        images: [{ url: '/hero.png', width: 1200, height: 630, alt: 'Alex Merced Media' }],
+    },
+};
 
 export const revalidate = 3600;
 

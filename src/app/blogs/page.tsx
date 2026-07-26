@@ -3,6 +3,20 @@ import BlogCard from '@/components/BlogCard';
 import { fetchRSS } from '@/lib/rss';
 import { MEDIA_DATA } from '@/lib/data';
 import { BlogPost } from '@/lib/types';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Articles & Blog Posts | Alex Merced Media',
+    description: "The latest articles and blog posts by Alex Merced on data engineering, Apache Iceberg, the data lakehouse, and agentic analytics — aggregated from every publication.",
+    alternates: { canonical: '/blogs' },
+    openGraph: {
+        title: 'Articles & Blog Posts | Alex Merced Media',
+        description: 'The latest articles and blog posts by Alex Merced on data engineering, Apache Iceberg, and the data lakehouse.',
+        url: 'https://alexmercedmedia.com/blogs',
+        type: 'website',
+        images: [{ url: '/hero.png', width: 1200, height: 630, alt: 'Alex Merced Media' }],
+    },
+};
 
 export const revalidate = 3600; // Revalidate every hour
 
