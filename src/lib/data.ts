@@ -535,6 +535,96 @@ export const MEDIA_DATA: MediaConfig = {
             coverImage: "https://m.media-amazon.com/images/I/71GdJ3aTnFL._SY522_.jpg",
             category: "tech",
             description: "A practical guide to the Microsoft Copilot ecosystem covering Copilot Chat, M365 Copilot, GitHub Copilot, Copilot Studio, Copilot Cowork, and Copilot Plus PC features."
+        },
+        {
+            title: "D6 Storyteller: The Core Rulebook",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/core-rulebook.webp",
+            category: "tabletop",
+            description: "The complete fiction-first tabletop roleplaying engine with ten ready-to-play starter worlds."
+        },
+        {
+            title: "D6 Storyteller: High & Mythic Fantasy Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/high-mythic-fantasy-companion.webp",
+            category: "tabletop",
+            description: "Ten complete high-fantasy settings for the D6 engine."
+        },
+        {
+            title: "D6 Storyteller: Sci-Fi & Cosmic Frontiers Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/sci-fi-cosmic-frontiers-companion.webp",
+            category: "tabletop",
+            description: "Ten sci-fi settings from generation ships to Dyson spheres."
+        },
+        {
+            title: "D6 Storyteller: Weird West, Piracy & Swashbuckling Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/weird-west-piracy-swashbuckling-companion.webp",
+            category: "tabletop",
+            description: "Ten gunpowder-and-salt-air settings from weird west towns to cursed pirate seas."
+        },
+        {
+            title: "D6 Storyteller: Horror, Occult & Supernatural Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/horror-occult-supernatural-companion.webp",
+            category: "tabletop",
+            description: "Ten horror settings from cosmic cults to nightmare realms."
+        },
+        {
+            title: "D6 Storyteller: Cybernetics, Speculative & Alternate Tech Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/cybernetics-speculative-alternate-tech-companion.webp",
+            category: "tabletop",
+            description: "Ten settings exploring the relationship between technology and humanity."
+        },
+        {
+            title: "D6 Storyteller: Superheroes, Kaiju & Anime Tropes Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/superheroes-kaiju-anime-tropes-companion.webp",
+            category: "tabletop",
+            description: "Ten settings for caped vigilantes, mech academies, and kaiju defense forces."
+        },
+        {
+            title: "D6 Storyteller: Historical & Alternate History Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/historical-alternate-history-companion.webp",
+            category: "tabletop",
+            description: "Ten settings grounded in real history with speculative twists."
+        },
+        {
+            title: "D6 Storyteller: Quirky, Experimental & Micro-Scale Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/quirky-experimental-micro-scale-companion.webp",
+            category: "tabletop",
+            description: "Ten playful experimental settings from tiny borrowers to time-travel patrols."
+        },
+        {
+            title: "D6 Storyteller: Post-Apocalyptic & Speculative Worlds Companion",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HC4XMKW3",
+            coverImage: "https://d6storyteller.alexmerced.com/images/covers/post-apocalyptic-speculative-worlds-companion.webp",
+            category: "tabletop",
+            description: "Ten end-of-the-world settings from ice-age survival to the end of time."
         }
     ]
 };

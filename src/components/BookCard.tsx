@@ -9,7 +9,8 @@ export default function BookCard({ book }: BookCardProps) {
     const categoryLabels: Record<string, string> = {
         tech: 'Tech',
         economics: 'Economics & Philosophy',
-        fiction: 'Fiction'
+        fiction: 'Fiction',
+        tabletop: 'Tabletop RPG'
     };
 
     const categoryLabel = book.category ? (categoryLabels[book.category] || book.category) : '';

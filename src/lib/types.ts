@@ -42,7 +42,7 @@ export interface BookConfig {
     year: string;
     url: string;
     coverImage?: string;
-    category?: 'tech' | 'economics' | 'fiction';
+    category?: 'tech' | 'economics' | 'fiction' | 'tabletop';
     description?: string;
 }
 

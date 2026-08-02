@@ -7,7 +7,7 @@ import { MEDIA_DATA } from '@/lib/data';
 
 export default function BooksPage() {
     const [searchQuery, setSearchQuery] = useState('');
-    const [activeCategory, setActiveCategory] = useState<'all' | 'tech' | 'economics' | 'fiction'>('all');
+    const [activeCategory, setActiveCategory] = useState<'all' | 'tech' | 'economics' | 'fiction' | 'tabletop'>('all');
 
     // Sort books by year descending
     const books = [...MEDIA_DATA.books].sort((a, b) =>
@@ -68,6 +68,14 @@ export default function BooksPage() {
                                 aria-selected={activeCategory === 'fiction'}
                             >
                                 Fiction ({books.filter(b => b.category === 'fiction').length})
+                            </button>
+                            <button
+                                className={`${styles.tab} ${activeCategory === 'tabletop' ? styles.activeTab : ''}`}
+                                onClick={() => setActiveCategory('tabletop')}
+                                role="tab"
+                                aria-selected={activeCategory === 'tabletop'}
+                            >
+                                Tabletop RPG ({books.filter(b => b.category === 'tabletop').length})
                             </button>
                         </div>
                         <div className={styles.searchWrapper}>
