@@ -10,6 +10,21 @@ import { MEDIA_DATA } from '@/lib/data';
 
 export const revalidate = 3600;
 
+const videoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Who is Alex Merced?",
+  "description": "Who is Alex Merced — a short introduction",
+  "thumbnailUrl": "https://alexmercedmedia.com/who-is-alex-merced-poster.jpg",
+  "uploadDate": "2026-08-05",
+  "duration": "PT48S",
+  "contentUrl": "https://alexmercedmedia.com/who-is-alex-merced.mp4",
+  "embedUrl": "https://alexmercedmedia.com/#brand-video",
+  "about": { "@id": "https://alexmerced.com/#alexmerced" },
+  "author": { "@id": "https://alexmerced.com/#alexmerced" },
+  "publisher": { "@id": "https://alexmerced.com/#alexmerced" }
+};
+
 async function getAggregatedData() {
   // 1. Blogs (Limit to 4)
   const blogPromises = MEDIA_DATA.blogs.map(blog => fetchRSS(blog.rssFeed, blog.name));
@@ -76,6 +91,36 @@ export default async function Home() {
       </section>
 
       <div id="latest" className={styles.container}>
+
+        {/* Brand Video */}
+        <section id="brand-video" className={styles.section}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+          />
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Who is Alex Merced?</h2>
+          </div>
+          <figure className={styles.videoFigure}>
+            <div className={styles.videoFrame}>
+              <video
+                controls
+                preload="metadata"
+                playsInline
+                poster="/who-is-alex-merced-poster.jpg"
+                width={1920}
+                height={1080}
+              >
+                <source src="/who-is-alex-merced.mp4" type="video/mp4" />
+                Your browser does not support the video tag.{' '}
+                <a href="/who-is-alex-merced.mp4">Download the video</a>.
+              </video>
+            </div>
+            <figcaption className={styles.videoCaption}>
+              A 48-second introduction — press play (with sound) for the short version.
+            </figcaption>
+          </figure>
+        </section>
 
         {/* Latest Videos */}
         <section className={styles.section}>
