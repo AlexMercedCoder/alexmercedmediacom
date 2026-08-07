@@ -411,6 +411,24 @@ export const MEDIA_DATA: MediaConfig = {
             description: "A companion volume to the fantasy trilogy, expanding the lore with standalone tales set in the same world."
         },
         {
+            title: "Signal and Noise",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HDDN968Z",
+            coverImage: "https://images.amazon.com/images/P/B0HDDN968Z.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "A literary novel tracing a twelve-year long-distance connection between a documentary producer in Manila and a logistics manager in Indiana, and the single hour that finally tests it."
+        },
+        {
+            title: "Celestial Fragments: The Duel of Souls",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HD831HR9",
+            coverImage: "https://images.amazon.com/images/P/B0HD831HR9.01._SCLZZZZZZZ_.jpg",
+            category: "fiction",
+            description: "A contemporary fantasy in which two political rivals discover they carry the fragments of ancient beings of love and hate, continuing a conflict twelve thousand years old."
+        },
+        {
             title: "AI and Agents for Normal People",
             publisher: "Alex Merced Books",
             year: "2026",
