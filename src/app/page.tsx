@@ -16,7 +16,7 @@ const videoJsonLd = {
   "name": "Who is Alex Merced?",
   "description": "Who is Alex Merced — a short introduction",
   "thumbnailUrl": "https://alexmercedmedia.com/who-is-alex-merced-poster.jpg",
-  "uploadDate": "2026-08-05",
+  "uploadDate": "2026-08-05T00:00:00+00:00",
   "duration": "PT48S",
   "contentUrl": "https://alexmercedmedia.com/who-is-alex-merced.mp4",
   "embedUrl": "https://alexmercedmedia.com/#brand-video",
