@@ -78,3 +78,72 @@ a:hover {
     scroll-behavior: auto !important;
   }
 }
+/* ============================================
+   Hero Broadcast Motif — desktop only
+   ============================================ */
+.amm-viz {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .amm-viz {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--color-primary);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+.amm-arc {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  opacity: 0.18;
+}
+
+.amm-signal {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 14 86;
+  animation: amm-travel 7s ease-in-out infinite;
+}
+
+.amm-signal--b {
+  animation-duration: 9s;
+  animation-delay: -3.5s;
+  opacity: 0.6;
+}
+
+.amm-nodes circle {
+  fill: currentColor;
+  animation: amm-node 4.5s ease-in-out infinite;
+}
+
+@keyframes amm-travel {
+  from { stroke-dashoffset: 100; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes amm-node {
+  0%, 100% { opacity: 0.25; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.35); }
+}
+
+.amm-nodes circle {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .amm-signal, .amm-nodes circle { animation: none; }
+  .amm-signal { stroke-dashoffset: 55; }
+  .amm-nodes circle { opacity: 0.5; }
+}

@@ -9,9 +9,12 @@
   /* Clean background */
   overflow: hidden;
   border-bottom: 1px solid var(--color-border);
+  position: relative;
 }
 
 .heroContainer {
+  position: relative;
+  z-index: 1;
   max-width: var(--max-width-container);
   margin: 0 auto;
   padding: 0 var(--space-6);

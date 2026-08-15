@@ -69,6 +69,44 @@ export default async function Home() {
     <main className={styles.main}>
       {/* Hero Section */}
       <section className={styles.hero}>
+        <svg className="amm-viz" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <defs>
+            <pattern id="amm-dots" width="34" height="34" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.6" fill="currentColor" opacity="0.28" />
+            </pattern>
+            <radialGradient id="amm-fade" gradientUnits="userSpaceOnUse" cx="120" cy="600" r="1180">
+              <stop offset="0" stopColor="#fff" />
+              <stop offset="0.62" stopColor="#fff" />
+              <stop offset="1" stopColor="#000" />
+            </radialGradient>
+            <mask id="amm-mask"><rect width="1440" height="640" fill="url(#amm-fade)" /></mask>
+          </defs>
+
+          <g mask="url(#amm-mask)">
+            <rect width="1440" height="640" fill="url(#amm-dots)" />
+
+            {/* Broadcast arcs radiating from the lower left */}
+            <g className="amm-arcs">
+              <path className="amm-arc" d="M360 640 A240 240 0 0 0 120 400" />
+              <path className="amm-arc" d="M480 640 A360 360 0 0 0 120 280" />
+              <path className="amm-arc" d="M620 640 A500 500 0 0 0 120 140" />
+              <path className="amm-arc" d="M780 640 A660 660 0 0 0 120 -20" />
+              <path className="amm-arc" d="M960 640 A840 840 0 0 0 120 -200" />
+            </g>
+
+            {/* Signal travelling along the outgoing arcs */}
+            <path className="amm-signal" pathLength={100} d="M480 640 A360 360 0 0 0 120 280" />
+            <path className="amm-signal amm-signal--b" pathLength={100} d="M780 640 A660 660 0 0 0 120 -20" />
+
+            {/* Content riding the broadcast */}
+            <g className="amm-nodes">
+              <circle cx="337" cy="480" r="6" />
+              <circle cx="447" cy="345" r="5" style={{ animationDelay: '-1.3s' }} />
+              <circle cx="590" cy="228" r="6" style={{ animationDelay: '-2.6s' }} />
+              <circle cx="245" cy="565" r="5" style={{ animationDelay: '-3.4s' }} />
+            </g>
+          </g>
+        </svg>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
             <span className={styles.eyebrow}>Developer Relations & Data Engineering</span>
