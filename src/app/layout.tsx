@@ -73,7 +73,7 @@ const jsonLd = {
         "https://alexmerced.blog",
         "https://amdatalakehouse.substack.com",
         "https://loveatarian.substack.com",
-        "https://www.youtube.com/@AlexMercedData"
+        "https://www.youtube.com/@alexmerceddata"
       ],
       "jobTitle": "Developer Advocate",
       "worksFor": {
