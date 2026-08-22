@@ -429,6 +429,24 @@ export const MEDIA_DATA: MediaConfig = {
             description: "A contemporary fantasy in which two political rivals discover they carry the fragments of ancient beings of love and hate, continuing a conflict twelve thousand years old."
         },
         {
+            title: "Adventures in Love and Flooding",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HG3YM4QW",
+            coverImage: "/covers/adventures-in-love-and-flooding.jpg",
+            category: "fiction",
+            description: "A romantic action thriller about disaster capitalism, artificial intelligence, and ordinary competence. He crossed an ocean for a woman he had only ever met on a screen, and landed four days before the water came."
+        },
+        {
+            title: "The Last Continue",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HG5TGQBV",
+            coverImage: "/covers/the-last-continue.jpg",
+            category: "fiction",
+            description: "A novel about finishing things, and about what a finished life turns out to be for. A clockmaker in Manchester, Connecticut spends fifty-six years noticing that the world does not always keep time."
+        },
+        {
             title: "AI and Agents for Normal People",
             publisher: "Alex Merced Books",
             year: "2026",
