@@ -60,7 +60,7 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://alexmerced.com/#alexmerced",
       "name": "Alex Merced",
-      "url": "https://alexmercedmedia.com",
+      "url": "https://alexmerced.com",
       "sameAs": [
         "https://twitter.com/alexmercedcoder",
         "https://www.linkedin.com/in/alexmerced",
@@ -111,6 +111,10 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        {/* WebMCP: read-only tools for browser AI agents. Progressive
+            enhancement; config lives in public/webmcp/init.js */}
+        <script src="/webmcp/alex-merced-webmcp.js" defer />
+        <script src="/webmcp/init.js" defer />
       </body>
     </html>
   );

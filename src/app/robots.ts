@@ -28,7 +28,15 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
-        userAgent: 'Anthropic-ai',
+        userAgent: 'Claude-User',
+        allow: '/',
+      },
+      {
+        userAgent: 'ChatGPT-User',
+        allow: '/',
+      },
+      {
+        userAgent: 'Perplexity-User',
         allow: '/',
       },
       {
