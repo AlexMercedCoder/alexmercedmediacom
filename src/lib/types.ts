@@ -41,6 +41,8 @@ export interface BookConfig {
     publisher: string;
     year: string;
     url: string;
+    /** Canonical page on books.alexmerced.com. */
+    detailsUrl?: string;
     coverImage?: string;
     category?: 'tech' | 'economics' | 'fiction' | 'tabletop';
     description?: string;

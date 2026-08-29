@@ -41,6 +41,11 @@ export default function BookCard({ book }: BookCardProps) {
                 {book.description && (
                     <p className={styles.description}>{book.description}</p>
                 )}
+                {book.detailsUrl && (
+                    <a href={book.detailsUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                        Details
+                    </a>
+                )}
                 <a href={book.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
                     View on Amazon
                     <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

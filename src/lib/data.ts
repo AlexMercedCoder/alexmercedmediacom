@@ -79,6 +79,7 @@ export const MEDIA_DATA: MediaConfig = {
     books: [
         {
             title: "Apache Iceberg: The Definitive Guide",
+            detailsUrl: "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/",
             publisher: "O’Reilly Media",
             year: "2024",
             url: "https://www.amazon.com/dp/1098148622",
@@ -88,6 +89,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Architecting an Apache Iceberg Lakehouse",
+            detailsUrl: "https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/",
             publisher: "Manning Publications",
             year: "2026",
             url: "https://www.amazon.com/dp/1633435105",
@@ -97,6 +99,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Apache Polaris: The Definitive Guide",
+            detailsUrl: "https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/",
             publisher: "O’Reilly Media",
             year: "2025",
             url: "https://www.amazon.com/dp/B0FBRJ7J1Y",
@@ -106,6 +109,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Book on Using Apache Iceberg with Python",
+            detailsUrl: "https://books.alexmerced.com/books/the-book-on-using-apache-iceberg-with-python/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GNZ454FF",
@@ -115,6 +119,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Book on Agentic Analytics",
+            detailsUrl: "https://books.alexmerced.com/books/the-book-on-agentic-analytics/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQN4Q41Y",
@@ -124,6 +129,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The 2026 Guide to Lakehouses, Apache Iceberg and Agentic AI",
+            detailsUrl: "https://books.alexmerced.com/books/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQNY21TD",
@@ -133,6 +139,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Enabling Agentic Analytics with Apache Iceberg and Dremio",
+            detailsUrl: "https://books.alexmerced.com/books/enabling-agentic-analytics-with-apache-iceberg-and-dremio/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQXT6W3N",
@@ -142,6 +149,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Using AI Agents for Data Engineering and Data Analysis",
+            detailsUrl: "https://books.alexmerced.com/books/using-ai-agents-for-data-engineering-and-data-analysis/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GR6PYJT9",
@@ -151,6 +159,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The AI Engineering Handbook",
+            detailsUrl: "https://books.alexmerced.com/books/the-ai-engineering-handbook/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GSS4R9FK",
@@ -160,6 +169,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "AI-Ready Data",
+            detailsUrl: "https://books.alexmerced.com/books/ai-ready-data/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/AI-Ready-Data-Designing-Platforms-Agents/dp/B0GSN7GLH2/ref=sr_1_3",
@@ -169,6 +179,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The 2026 Guide to AI-Assisted Development",
+            detailsUrl: "https://books.alexmerced.com/books/the-2026-guide-to-ai-assisted-development/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQW7CTML",
@@ -178,6 +189,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Apache Iceberg for Agentic AI: Connecting Structured Enterprise",
+            detailsUrl: "https://books.alexmerced.com/books/apache-iceberg-for-agentic-ai-connecting-structured-enterprise/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Apache-Iceberg-Agentic-Connecting-Structured-ebook/dp/B0DYTX2WZY/ref=sr_1_8",
@@ -187,6 +199,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Agentic Enterprise: Deploying AI Agents Across the Modern Organization",
+            detailsUrl: "https://books.alexmerced.com/books/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Agentic-Enterprise-Deploying-Agents-Organization/dp/B0GSN3NNS5/ref=sr_1_16",
@@ -196,6 +209,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Constructing Context and Semantics for AI Agents",
+            detailsUrl: "https://books.alexmerced.com/books/constructing-context-and-semantics-for-ai-agents/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Constructing-Context-Semantics-Agents-Embeddings/dp/B0GSHRZNZ5/ref=sr_1_21",
@@ -205,6 +219,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Open Source Lakehouse: Architecting the Decoupled Analytical Foundation",
+            detailsUrl: "https://books.alexmerced.com/books/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation/",
             publisher: "Alex Merced Books",
             year: "2024",
             url: "https://www.amazon.com/Open-Source-Lakehouse-Architecting-Analytical-ebook/dp/B0D46P3VB7/ref=sr_1_17",
@@ -214,6 +229,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Evaluating AI Systems: Testing LLMs, RAG, and Agents",
+            detailsUrl: "https://books.alexmerced.com/books/evaluating-ai-systems-testing-llms-rag-and-agents/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Evaluating-AI-Systems-Testing-Agents/dp/B0GSVPQ667/ref=sr_1_19",
@@ -223,6 +239,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Economics of Labor in the AI Era",
+            detailsUrl: "https://books.alexmerced.com/books/the-economics-of-labor-in-the-ai-era/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Economics-Labor-Era-Disruption-Adaptation/dp/B0GSQSL344/ref=sr_1_20",
@@ -232,6 +249,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Governing AI Systems",
+            detailsUrl: "https://books.alexmerced.com/books/governing-ai-systems/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Governing-AI-Systems/dp/B0GSMVQ1TH/ref=sr_1_21",
@@ -241,6 +259,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Shipping AI: From Prototype to Production Systems",
+            detailsUrl: "https://books.alexmerced.com/books/shipping-ai-from-prototype-to-production-systems/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Shipping-AI-Prototype-Production-Systems/dp/B0GSR2GRZX/ref=sr_1_22",
@@ -250,6 +269,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Building Knowledge Systems for AI: Graphs, RAG, Memory, and Context",
+            detailsUrl: "https://books.alexmerced.com/books/building-knowledge-systems-for-ai-graphs-rag-memory-and-context/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Building-Knowledge-Systems-AI-Context/dp/B0GSWFSSRC/ref=sr_1_27",
@@ -259,6 +279,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The AI Lakehouse: Architecting Data Platforms for AI",
+            detailsUrl: "https://books.alexmerced.com/books/the-ai-lakehouse-architecting-data-platforms-for-ai/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/AI-Lakehouse-Architecting-Data-Platforms/dp/B0GSMQ6M2J/ref=sr_1_29",
@@ -268,6 +289,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "AI Application Architecture: Patterns for Building Intelligent Systems",
+            detailsUrl: "https://books.alexmerced.com/books/ai-application-architecture-patterns-for-building-intelligent-systems/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/AI-Application-Architecture-Patterns-Intelligent/dp/B0GSVFT3H4/ref=sr_1_35",
@@ -277,6 +299,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Economics of AI: Cost, Latency, and Infrastructure Tradeoffs",
+            detailsUrl: "https://books.alexmerced.com/books/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/Economics-AI-Latency-Infrastructure-Tradeoffs/dp/B0GSPGSKXC/ref=sr_1_36",
@@ -286,6 +309,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Alex Merced's Field Guide to Developer Relations",
+            detailsUrl: "https://books.alexmerced.com/books/alex-merced-s-field-guide-to-developer-relations/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H15CJLNG",
@@ -295,6 +319,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Economic Ideas: From Beginning to Early 2026",
+            detailsUrl: "https://books.alexmerced.com/books/economic-ideas-from-beginning-to-early-2026/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQQ68F63",
@@ -304,6 +329,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Field Guide to Libertarianism",
+            detailsUrl: "https://books.alexmerced.com/books/the-field-guide-to-libertarianism/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQV4CK5B",
@@ -313,6 +339,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Field Guide to Political Thought and Debates in the United States",
+            detailsUrl: "https://books.alexmerced.com/books/the-field-guide-to-political-thought-and-debates-in-the-united-states/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GTV6ZWHX",
@@ -322,6 +349,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Libertarian Heart",
+            detailsUrl: "https://books.alexmerced.com/books/the-libertarian-heart/",
             publisher: "Lulu Press",
             year: "2019",
             url: "https://www.lulu.com/shop/alex-merced/the-libertarian-heart/paperback/product-1e9k7v7.html",
@@ -331,6 +359,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Profits are Generosity, Entrepreneurship is Philanthropy",
+            detailsUrl: "https://books.alexmerced.com/books/profits-are-generosity-entrepreneurship-is-philanthropy/",
             publisher: "Lulu Press",
             year: "2018",
             url: "https://www.amazon.com/Profits-are-Generosity-Entrepreneurship-Philanthropy/dp/1387798421",
@@ -340,6 +369,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Semantic Rebellion",
+            detailsUrl: "https://books.alexmerced.com/books/the-semantic-rebellion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GPMNX78W",
@@ -349,6 +379,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Emperors of A.I. Valley",
+            detailsUrl: "https://books.alexmerced.com/books/the-emperors-of-a-i-valley/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQHKF4ZT",
@@ -358,6 +389,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Federation of Tides",
+            detailsUrl: "https://books.alexmerced.com/books/the-federation-of-tides/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GPRBTV6W",
@@ -367,6 +399,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Plastic Punk",
+            detailsUrl: "https://books.alexmerced.com/books/plastic-punk/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQGRFW2H",
@@ -376,6 +409,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Embers of Claim",
+            detailsUrl: "https://books.alexmerced.com/books/embers-of-claim/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQGW7VCY",
@@ -385,6 +419,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Crowns and Wings",
+            detailsUrl: "https://books.alexmerced.com/books/crowns-and-wings/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQGHYL79",
@@ -394,6 +429,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Thrones of Ash and Sky",
+            detailsUrl: "https://books.alexmerced.com/books/thrones-of-ash-and-sky/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQCHRYHV",
@@ -403,6 +439,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Tales of Fur and Sky: Echoes of the Ages",
+            detailsUrl: "https://books.alexmerced.com/books/tales-of-fur-and-sky-echoes-of-the-ages/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GQGRGH93",
@@ -412,6 +449,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Signal and Noise",
+            detailsUrl: "https://books.alexmerced.com/books/signal-and-noise/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HDDN968Z",
@@ -421,6 +459,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Celestial Fragments: The Duel of Souls",
+            detailsUrl: "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HD831HR9",
@@ -430,6 +469,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Adventures in Love and Flooding",
+            detailsUrl: "https://books.alexmerced.com/books/adventures-in-love-and-flooding/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HG3YM4QW",
@@ -439,6 +479,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Last Continue",
+            detailsUrl: "https://books.alexmerced.com/books/the-last-continue/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HG5TGQBV",
@@ -448,6 +489,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "AI and Agents for Normal People",
+            detailsUrl: "https://books.alexmerced.com/books/ai-and-agents-for-normal-people/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H59GBTMW",
@@ -457,6 +499,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The No Lock-in Apache Iceberg Lakehouse with Agentic Analytics",
+            detailsUrl: "https://books.alexmerced.com/books/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H49TDNX3",
@@ -466,6 +509,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Being Productive with Google AI",
+            detailsUrl: "https://books.alexmerced.com/books/being-productive-with-google-ai/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H77DBD83",
@@ -475,6 +519,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Being Productive with Open Models",
+            detailsUrl: "https://books.alexmerced.com/books/being-productive-with-open-models/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H76JQ55R",
@@ -484,6 +529,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Being Productive with Claude",
+            detailsUrl: "https://books.alexmerced.com/books/being-productive-with-claude/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H76BTLMF",
@@ -493,6 +539,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Being Productive with OpenAI Codex",
+            detailsUrl: "https://books.alexmerced.com/books/being-productive-with-openai-codex/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H766477L",
@@ -502,6 +549,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 2",
+            detailsUrl: "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GZVJB6ML",
@@ -511,6 +559,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 1",
+            detailsUrl: "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GZTXJQ1C",
@@ -520,6 +569,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Dremio and the Semantic Layer",
+            detailsUrl: "https://books.alexmerced.com/books/dremio-and-the-semantic-layer/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GWF7PFDG",
@@ -529,6 +579,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Hands-On Agentic Engineering",
+            detailsUrl: "https://books.alexmerced.com/books/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GWTZ1394",
@@ -538,6 +589,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Lakehouse Built for Everyone",
+            detailsUrl: "https://books.alexmerced.com/books/the-lakehouse-built-for-everyone/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GYL5Q5YV",
@@ -547,6 +599,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "The Book on Apache Polaris",
+            detailsUrl: "https://books.alexmerced.com/books/the-book-on-apache-polaris/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0GZDVCV24",
@@ -556,6 +609,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Being Productive with Grok and Cursor",
+            detailsUrl: "https://books.alexmerced.com/books/being-productive-with-grok-and-cursor/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H7Z6RS5Y",
@@ -565,6 +619,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "Being Productive with Microsoft Copilot",
+            detailsUrl: "https://books.alexmerced.com/books/being-productive-with-microsoft-copilot/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0H7WZ19NJ",
@@ -574,6 +629,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: The Core Rulebook",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -583,6 +639,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: High & Mythic Fantasy Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-high-mythic-fantasy-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -592,6 +649,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Sci-Fi & Cosmic Frontiers Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-sci-fi-cosmic-frontiers-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -601,6 +659,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Weird West, Piracy & Swashbuckling Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-weird-west-piracy-swashbuckling-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -610,6 +669,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Horror, Occult & Supernatural Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-horror-occult-supernatural-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -619,6 +679,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Cybernetics, Speculative & Alternate Tech Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-cybernetics-speculative-alternate-tech-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -628,6 +689,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Superheroes, Kaiju & Anime Tropes Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-superheroes-kaiju-anime-tropes-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -637,6 +699,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Historical & Alternate History Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-historical-alternate-history-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -646,6 +709,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Quirky, Experimental & Micro-Scale Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-quirky-experimental-micro-scale-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
@@ -655,6 +719,7 @@ export const MEDIA_DATA: MediaConfig = {
         },
         {
             title: "D6 Storyteller: Post-Apocalyptic & Speculative Worlds Companion",
+            detailsUrl: "https://books.alexmerced.com/books/d6-storyteller-post-apocalyptic-speculative-worlds-companion/",
             publisher: "Alex Merced Books",
             year: "2026",
             url: "https://www.amazon.com/dp/B0HC4XMKW3",
