@@ -13,12 +13,12 @@ export const revalidate = 3600;
 const videoJsonLd = {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "Who is Alex Merced?",
-  "description": "Who is Alex Merced — a short introduction",
-  "thumbnailUrl": "https://alexmercedmedia.com/who-is-alex-merced-poster.jpg",
-  "uploadDate": "2026-08-05T00:00:00+00:00",
-  "duration": "PT48S",
-  "contentUrl": "https://alexmercedmedia.com/who-is-alex-merced.mp4",
+  "name": "My Name Is Alex",
+  "description": "A scene-rich music video introducing Alex Merced, his story, and the ideas that connect his work.",
+  "thumbnailUrl": "https://alexmerced.com/my-name-is-alex-poster.jpg",
+  "uploadDate": "2026-09-02T00:00:00+00:00",
+  "duration": "PT7M40S",
+  "contentUrl": "https://alexmerced.com/my-name-is-alex.mp4",
   "embedUrl": "https://alexmercedmedia.com/#brand-video",
   "about": { "@id": "https://alexmerced.com/#alexmerced" },
   "author": { "@id": "https://alexmerced.com/#alexmerced" },
@@ -130,14 +130,14 @@ export default async function Home() {
 
       <div id="latest" className={styles.container}>
 
-        {/* Brand Video */}
+        {/* Brand music video */}
         <section id="brand-video" className={styles.section}>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
           />
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Who is Alex Merced?</h2>
+            <h2 className={styles.sectionTitle}>My Name Is Alex</h2>
           </div>
           <figure className={styles.videoFigure}>
             <div className={styles.videoFrame}>
@@ -145,17 +145,18 @@ export default async function Home() {
                 controls
                 preload="metadata"
                 playsInline
-                poster="/who-is-alex-merced-poster.jpg"
+                poster="https://alexmerced.com/my-name-is-alex-poster.jpg"
+                aria-label="My Name Is Alex music video"
                 width={1920}
                 height={1080}
               >
-                <source src="/who-is-alex-merced.mp4" type="video/mp4" />
-                Your browser does not support the video tag.{' '}
-                <a href="/who-is-alex-merced.mp4">Download the video</a>.
+                <source src="https://alexmerced.com/my-name-is-alex.mp4" type="video/mp4" />
+                Your browser does not support embedded video.{' '}
+                <a href="https://alexmerced.com/my-name-is-alex.mp4">Open the video</a>.
               </video>
             </div>
             <figcaption className={styles.videoCaption}>
-              A 48-second introduction — press play (with sound) for the short version.
+              A 7:40 scene-rich musical introduction to Alex’s story, work, and ideas. Best watched full-screen with sound.
             </figcaption>
           </figure>
         </section>
