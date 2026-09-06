@@ -7,6 +7,7 @@ const NETWORK = [
             { label: 'AlexMerced.com', url: 'https://alexmerced.com' },
             { label: 'WhoIsAlexMerced.com', url: 'https://whoisalexmerced.com' },
             { label: 'Books', url: 'https://books.alexmerced.com' },
+            { label: 'Branding.AlexMerced.com', url: 'https://branding.alexmerced.com' },
             { label: 'AlexMercedCoder.dev', url: 'https://alexmercedcoder.dev' },
             { label: 'AlexMercedData.com', url: 'https://alexmerceddata.com' },
         ],
