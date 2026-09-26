@@ -3,7 +3,7 @@ import { MEDIA_DATA } from '@/lib/data';
 
 export const metadata: Metadata = {
     title: 'Books | Alex Merced Media',
-    description: "Explore 65 books by Alex Merced across technology, economics, philosophy, fiction, and tabletop RPGs, including Apache Iceberg: The Definitive Guide.",
+    description: `Explore ${MEDIA_DATA.books.length} books by Alex Merced across technology, economics, philosophy, fiction, and tabletop RPGs, including Apache Iceberg: The Definitive Guide and Building the Software Factory.`,
     alternates: { canonical: '/books' },
     openGraph: {
         title: 'Books | Alex Merced Media',

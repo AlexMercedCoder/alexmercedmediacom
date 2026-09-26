@@ -78,6 +78,16 @@ export const MEDIA_DATA: MediaConfig = {
     ],
     books: [
         {
+            title: "Building the Software Factory",
+            detailsUrl: "https://books.alexmerced.com/books/building-the-software-factory/",
+            publisher: "Packt Publishing",
+            year: "2026",
+            url: "https://www.amazon.com/dp/1807782778",
+            coverImage: "https://m.media-amazon.com/images/I/81-gPruyXyL._SL1500_.jpg",
+            category: "tech",
+            description: "Scaling reliable AI coding practices from individual developers to teams with context engineering, AI-TDD, and harness design."
+        },
+        {
             title: "Apache Iceberg: The Definitive Guide",
             detailsUrl: "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/",
             publisher: "O’Reilly Media",
@@ -726,6 +736,116 @@ export const MEDIA_DATA: MediaConfig = {
             coverImage: "https://d6storyteller.alexmerced.com/images/covers/post-apocalyptic-speculative-worlds-companion.webp",
             category: "tabletop",
             description: "Ten end-of-the-world settings from ice-age survival to the end of time."
+        },
+        {
+            title: "Reputation as Code",
+            detailsUrl: "https://books.alexmerced.com/books/reputation-as-code/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HHXV4L42",
+            coverImage: "https://images.amazon.com/images/P/B0HHXV4L42.01._SCLZZZZZZZ_.jpg",
+            category: "tech",
+            description: "How technical professionals build career sovereignty through public artifacts, repeatable content pipelines, and community generosity."
+        },
+        {
+            title: "The Children of Damaris",
+            detailsUrl: "https://books.alexmerced.com/books/the-children-of-damaris/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HHZFSG82",
+            coverImage: "https://m.media-amazon.com/images/I/814bKVKGW+L._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 1 of 10. A family flees a regime that takes every child into state custody."
+        },
+        {
+            title: "A Crown of Cliffs",
+            detailsUrl: "https://books.alexmerced.com/books/a-crown-of-cliffs/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJ3VMVXD",
+            coverImage: "https://m.media-amazon.com/images/I/81m0syAst1L._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 2 of 10. A canyon kingdom where every load-bearing part carries a family's name."
+        },
+        {
+            title: "The Price of High Ground",
+            detailsUrl: "https://books.alexmerced.com/books/the-price-of-high-ground/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJ6B5JWJ",
+            coverImage: "https://m.media-amazon.com/images/I/91jvMuSAA-L._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 3 of 10. A world where arrival is an invoice and every charge is published."
+        },
+        {
+            title: "The Common Sun",
+            detailsUrl: "https://books.alexmerced.com/books/the-common-sun/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJFNCSCN",
+            coverImage: "https://m.media-amazon.com/images/I/910nHjOgvkL._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 4 of 10. A generous public system that costs the family more than it seems."
+        },
+        {
+            title: "What the Models Cannot See",
+            detailsUrl: "https://books.alexmerced.com/books/what-the-models-cannot-see/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJJDS9NH",
+            coverImage: "https://m.media-amazon.com/images/I/81aHYjEWVRL._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 5 of 10. The best-run world yet, and a formal hold nobody can point at."
+        },
+        {
+            title: "The Memory Garden",
+            detailsUrl: "https://books.alexmerced.com/books/the-memory-garden/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJJSSWJ7",
+            coverImage: "https://m.media-amazon.com/images/I/91U627Pk2TL._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 6 of 10. Nothing billed, nothing withheld, and a hillside that remembers."
+        },
+        {
+            title: "No One Commands the Tunnels",
+            detailsUrl: "https://books.alexmerced.com/books/no-one-commands-the-tunnels/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJK1FL81",
+            coverImage: "https://m.media-amazon.com/images/I/91ZToGC0L1L._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 7 of 10. Tunnels run by chambers and signed findings instead of offices."
+        },
+        {
+            title: "Terms of Protection",
+            detailsUrl: "https://books.alexmerced.com/books/terms-of-protection/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJGP4K8H",
+            coverImage: "https://m.media-amazon.com/images/I/91XYqcyp6kL._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 8 of 10. Air is the currency and protection is bought from competing houses."
+        },
+        {
+            title: "The Light at the Lava Sea",
+            detailsUrl: "https://books.alexmerced.com/books/the-light-at-the-lava-sea/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HJJWZTKT",
+            coverImage: "https://m.media-amazon.com/images/I/81ukVpUTn5L._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 9 of 10. An occupation that writes everything down, and a girl climbing alone."
+        },
+        {
+            title: "The Voice at the End of Everything",
+            detailsUrl: "https://books.alexmerced.com/books/the-voice-at-the-end-of-everything/",
+            publisher: "Alex Merced Books",
+            year: "2026",
+            url: "https://www.amazon.com/dp/B0HL22DC7F",
+            coverImage: "https://m.media-amazon.com/images/I/91ew4c30crL._SL1500_.jpg",
+            category: "fiction",
+            description: "The Worlds Between Home, Book 10 of 10. The series finale: a case kept open against something that has decided."
         }
     ]
 };
