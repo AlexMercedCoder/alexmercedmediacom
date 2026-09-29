@@ -22,7 +22,7 @@ export const revalidate = 3600;
 async function getAllVideos(): Promise<YouTubeVideo[]> {
     const promises = MEDIA_DATA.videos.map(async (channel) => {
         if (channel.channelId) {
-            return await fetchLatestYouTubeVideos(channel.channelId);
+            return (await fetchLatestYouTubeVideos(channel.channelId)).map(video => ({ ...video, channelTitle: channel.channelName }));
         }
         return [];
     });
@@ -38,6 +38,10 @@ async function getAllVideos(): Promise<YouTubeVideo[]> {
 
 export default async function VideosPage() {
     const videos = await getAllVideos();
+    const techChannels = MEDIA_DATA.videos.filter(channel => channel.focus !== 'Music');
+    const musicChannel = MEDIA_DATA.videos.find(channel => channel.focus === 'Music');
+    const techVideos = videos.filter(video => techChannels.some(channel => channel.channelId && video.channelTitle.toLowerCase().includes(channel.channelName.split('(')[0].trim().toLowerCase().slice(0, 12))));
+    const musicVideos = videos.filter(video => !techVideos.includes(video));
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -66,18 +70,25 @@ export default async function VideosPage() {
                 <div className={styles.container}>
                     <h1 className={styles.pageTitle}>Latest Videos</h1>
                     <p className={styles.pageSubtitle}>
-                        Tutorials, talks, and tech deep dives across my channels.
+                        Choose between coding and data talks or music videos.
                     </p>
                 </div>
             </header>
 
             <section className={styles.feed}>
                 <div className={styles.container}>
+                    <h2>Code, data, and tech</h2>
+                    <p>Programming, lakehouse architecture, and developer education.</p>
+                    <div className={styles.channelLinks}>{techChannels.map(channel => <a key={channel.channelUrl} href={channel.channelUrl}>{channel.channelName} →</a>)}</div>
+                    {techVideos.length === 0 && <p>Recent uploads are available on the channels above.</p>}
                     <div className={styles.grid}>
-                        {videos.map((video) => (
+                        {techVideos.map((video) => (
                             <VideoCard key={video.id} video={video} />
                         ))}
                     </div>
+                    <h2>Music</h2>
+                    <p>Music releases and visual stories. <a href={musicChannel?.channelUrl}>Browse the music channel →</a></p>
+                    <div className={styles.grid}>{musicVideos.map(video => <VideoCard key={video.id} video={video} />)}</div>
                 </div>
             </section>
         </main>

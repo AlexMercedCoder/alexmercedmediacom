@@ -72,6 +72,21 @@ export default async function PodcastsPage() {
 
             <section className={styles.feed}>
                 <div className={styles.container}>
+                    <h2>Choose a show</h2>
+                    <div className={styles.showGrid}>
+                        {MEDIA_DATA.podcasts.map(show => (
+                            <article className={styles.showCard} key={show.name}>
+                                <img src={show.coverImage} alt="" width="72" height="72" />
+                                <div>
+                                    <h3>{show.name}</h3>
+                                    <p>{show.focus}</p>
+                                    <a href={show.mainUrl}>Listen to the show and browse its archive →</a>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
+                    <h2>Latest episodes</h2>
+                    {episodes.length === 0 && <p>Episodes are temporarily unavailable here. The show links above open the complete archives.</p>}
                     <div className={styles.grid}>
                         {episodes.map((episode, index) => (
                             <PodcastCard

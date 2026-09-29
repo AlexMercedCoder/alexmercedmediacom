@@ -42,6 +42,11 @@
     gap: var(--space-8);
 }
 
+.feed h2 { margin: var(--space-12) 0 var(--space-4); }
+.feed p { color: var(--color-text-secondary); margin-bottom: var(--space-4); }
+.channelLinks { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-6); }
+.channelLinks a, .feed p a { color: var(--color-primary); }
+
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;

@@ -9,7 +9,9 @@ const parser = new Parser({
 
 export async function fetchRSS(feedUrl: string, sourceName: string): Promise<BlogPost[]> {
     try {
-        const feed = await parser.parseURL(feedUrl);
+        const response = await fetch(feedUrl, { next: { revalidate: 3600 } });
+        if (!response.ok) throw new Error(`Status code ${response.status}`);
+        const feed = await parser.parseString(await response.text());
         return feed.items.map(item => ({
             title: item.title || 'Untitled',
             link: item.link || '',
