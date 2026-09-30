@@ -39,7 +39,7 @@ export interface BlogConfig {
 export interface BookConfig {
     title: string;
     publisher: string;
-    year: string;
+    year?: string;
     url: string;
     /** Canonical page on books.alexmerced.com. */
     detailsUrl?: string;
