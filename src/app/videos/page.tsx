@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Videos | Alex Merced Media',
-    description: "Watch the latest videos by Alex Merced — tutorials and talks on the data lakehouse, Apache Iceberg, Apache Polaris, query engines, and agentic analytics.",
+    description: "Watch the latest videos by Alex Merced: tutorials and talks on the data lakehouse, Apache Iceberg, Apache Polaris, query engines, and agentic analytics.",
     alternates: { canonical: '/videos' },
     openGraph: {
         title: 'Videos | Alex Merced Media',

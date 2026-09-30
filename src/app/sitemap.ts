@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { TOPICS } from '@/lib/topics'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://alexmercedmedia.com'
@@ -35,5 +36,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    ...TOPICS.map((t) => ({
+      url: `${baseUrl}/topics/${t.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.7,
+    })),
   ]
 }
