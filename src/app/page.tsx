@@ -10,20 +10,6 @@ import { MEDIA_DATA } from '@/lib/data';
 
 export const revalidate = 3600;
 
-const videoJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "My Name Is Alex",
-  "description": "A scene-rich music video introducing Alex Merced, his story, and the ideas that connect his work.",
-  "thumbnailUrl": "https://alexmerced.com/my-name-is-alex-poster.jpg",
-  "uploadDate": "2026-09-02T00:00:00+00:00",
-  "duration": "PT7M40S",
-  "contentUrl": "https://alexmerced.com/my-name-is-alex.mp4",
-  "embedUrl": "https://alexmercedmedia.com/#brand-video",
-  "about": { "@id": "https://alexmerced.com/#alexmerced" },
-  "author": { "@id": "https://alexmerced.com/#alexmerced" },
-  "publisher": { "@id": "https://alexmerced.com/#alexmerced" }
-};
 
 async function getAggregatedData() {
   // 1. Blogs (Limit to 4)
@@ -56,7 +42,7 @@ async function getAggregatedData() {
 
   // 4. Books (Featured / Latest 2)
   const recentBooks = [...MEDIA_DATA.books]
-    .sort((a, b) => parseInt(b.year) - parseInt(a.year))
+    .sort((a, b) => parseInt(b.year || '0') - parseInt(a.year || '0'))
     .slice(0, 2);
 
   return { detailedBlogs, recentVideos, recentPodcasts, recentBooks };
@@ -109,12 +95,12 @@ export default async function Home() {
         </svg>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
-            <span className={styles.eyebrow}>Developer Relations & Data Engineering</span>
+            <span className={styles.eyebrow}>Alex Merced Media</span>
             <h1 className={styles.heroTitle}>
-              Bridging the gap between <span className={styles.highlight}>Data</span> and <span className={styles.highlight}>People</span>.
+              Videos, podcasts and articles by <span className={styles.highlight}>Alex Merced</span>.
             </h1>
             <p className={styles.heroSubtitle}>
-              Alex Merced is an instructional advocate helping developers master the Data Lakehouse ecosystem.
+              New episodes and posts from every channel Alex publishes on, pulled in from their feeds. Most of it covers Apache Iceberg, the data lakehouse, agentic analytics and data engineering. Alex is Head of Developer Relations at Dremio.
             </p>
             <div className={styles.heroButtons}>
               <a href="#latest" className={styles.primaryBtn}>Explore Content</a>
@@ -132,10 +118,6 @@ export default async function Home() {
 
         {/* Brand music video */}
         <section id="brand-video" className={styles.section}>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
-          />
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>My Name Is Alex</h2>
           </div>
@@ -205,7 +187,7 @@ export default async function Home() {
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>Featured Books</h2>
-            <Link href="/books" className={styles.viewMore}>View Library →</Link>
+            <Link href="/books" className={styles.viewMore}>All books →</Link>
           </div>
           <div className={styles.bookGrid}>
             {recentBooks.map(book => <BookCard key={book.title} book={book} />)}

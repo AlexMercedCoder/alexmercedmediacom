@@ -1,12 +1,12 @@
 # Alex Merced Media
 
-> AlexMercedMedia.com is the central media hub for content created by Alex Merced — Head of Developer Relations at Dremio, author, podcaster, and YouTuber. It aggregates his work across data engineering, Apache Iceberg, AI, developer relations, and libertarian philosophy.
+> AlexMercedMedia.com collects the videos, podcasts, articles and books of Alex Merced, Head of Developer Relations at Dremio. Most of it covers Apache Iceberg, the data lakehouse, agentic analytics and data engineering.
 
-Alex Merced is an instructional advocate helping developers master the Data Lakehouse ecosystem. His expertise spans Apache Iceberg, Dremio, open-source software, agentic analytics, JavaScript, Python, Rust, Golang, and libertarian economics and philosophy.
+Alex Merced teaches developers how to build on the data lakehouse. He writes and talks about Apache Iceberg, Dremio, open-source software, agentic analytics, JavaScript, Python, Rust and Go.
 
 ## About
 
-- [Alex Merced Media — Homepage](https://alexmercedmedia.com): Central hub aggregating Alex Merced's blogs, videos, podcasts, and books.
+- [Alex Merced Media homepage](https://alexmercedmedia.com): Central hub aggregating Alex Merced's blogs, videos, podcasts, and books.
 
 ## Videos
 
@@ -16,7 +16,10 @@ Alex Merced is an instructional advocate helping developers master the Data Lake
 
 ## Articles
 
-- [Latest Articles](https://alexmercedmedia.com/blogs): Aggregated posts from all of Alex's blogs.
+- [Latest Articles](https://alexmercedmedia.com/blogs): Aggregated posts from all of Alex's blogs, 24 per page.
+- [Apache Iceberg](https://alexmercedmedia.com/topics/iceberg): Articles, videos and podcast episodes on Apache Iceberg.
+- [AI agents](https://alexmercedmedia.com/topics/agents): Articles, videos and podcast episodes on AI agents, agentic analytics and MCP.
+- [Semantic layer](https://alexmercedmedia.com/topics/semantic-layer): Articles, videos and podcast episodes on semantic layers.
 - [Alex Merced's Blog](https://alexmerced.blog): Personal tech blog.
 - [Open Data Lakehouses for Everyone](https://amdatalakehouse.substack.com): Substack newsletter on data lakehouses (tech).
 - [The Lovatarian](https://loveatarian.substack.com): Substack newsletter on politics and philosophy.
@@ -31,13 +34,12 @@ Alex Merced is an instructional advocate helping developers master the Data Lake
 
 ## Books
 
-- [Book Library](https://alexmercedmedia.com/books): Full catalog of Alex's published books.
-- [Apache Iceberg: The Definitive Guide (O'Reilly, 2024)](https://www.amazon.com/dp/1098148622)
-- [Architecting an Apache Iceberg Lakehouse (Manning, 2026)](https://www.amazon.com/dp/1633435105)
-- [Apache Polaris: The Definitive Guide (O'Reilly, 2025)](https://www.amazon.com/dp/B0FBRJ7J1Y)
-- [The Book on Using Apache Iceberg with Python (2026)](https://www.amazon.com/dp/B0GNZ454FF)
-- [The Book on Agentic Analytics (2026)](https://www.amazon.com/dp/B0GQN4Q41Y)
-- [The Field Guide to Libertarianism (2026)](https://www.amazon.com/dp/B0GQV4CK5B)
+- [Books](https://alexmercedmedia.com/books): Flagship titles. The full catalog is at books.alexmerced.com.
+- [Apache Iceberg: The Definitive Guide (O'Reilly)](https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/)
+- [Apache Polaris: The Definitive Guide (O'Reilly)](https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/)
+- [Architecting an Apache Iceberg Lakehouse (Manning)](https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/)
+- [Building the Software Factory (Packt)](https://books.alexmerced.com/books/building-the-software-factory/)
+- [Full catalog](https://books.alexmerced.com): Every book by Alex Merced.
 
 ## Related Official Domains
 
