@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { network, getNetworkHeadScripts } from "@/lib/network";
 
 const inter = Inter({
   variable: "--font-main",
@@ -9,16 +10,19 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_TITLE = "Alex Merced Media: Videos, Podcasts and Articles";
+const SITE_DESCRIPTION = "Videos, podcasts, articles and books by Alex Merced, Head of Developer Relations at Dremio, on Apache Iceberg, the data lakehouse, agentic analytics and data engineering.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://alexmercedmedia.com"),
   alternates: {
     canonical: "/",
   },
-  title: "Alex Merced | Developer Relations & Data Engineering",
-  description: "The central hub for Alex Merced's work in Developer Relations, Data Engineering, Apache Iceberg, and Libertarian philosophy.",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   openGraph: {
-    title: "Alex Merced | Developer Relations & Data Engineering",
-    description: "Bridging the gap between Data and People. Explore blogs, videos, podcasts, and books by Alex Merced.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     url: "https://alexmercedmedia.com",
     siteName: "Alex Merced Media",
     images: [
@@ -34,60 +38,33 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Merced | Developer Relations & Data Engineering",
-    description: "Bridging the gap between Data and People.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: ["/hero.png"],
-    site: "@amdatalakehouse",
-    creator: "@amdatalakehouse",
+    site: network.twitterSite,
+    creator: network.twitterSite,
   },
   icons: {
     icon: "/favicon.png",
   },
 };
 
+// The Person entity comes from network/network-head.html; reference it by @id only.
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "name": "Alex Merced Media",
-      "url": "https://alexmercedmedia.com",
-      "description": "The central hub for Alex Merced's work in Developer Relations, Data Engineering, Apache Iceberg, and Libertarian philosophy.",
-      "author": { "@id": "https://alexmerced.com/#alexmerced" },
-      "publisher": { "@id": "https://alexmerced.com/#alexmerced" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://alexmerced.com/#alexmerced",
-      "name": "Alex Merced",
-      "url": "https://alexmerced.com",
-      "sameAs": [
-        "https://twitter.com/alexmercedcoder",
-        "https://www.linkedin.com/in/alexmerced",
-        "https://github.com/alexmercedcoder",
-        "https://www.youtube.com/@AlexMercedCoder",
-        "https://alexmerced.com",
-        "https://alexmerceddata.com",
-        "https://books.alexmerced.com",
-        "https://whoisalexmerced.com",
-        "https://alexmerced.blog",
-        "https://amdatalakehouse.substack.com",
-        "https://loveatarian.substack.com",
-        "https://www.youtube.com/@alexmerceddata",
-        "https://branding.alexmerced.com"
-      ],
-      "jobTitle": "Developer Advocate",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Dremio"
-      },
-      "description": "Instructional advocate helping developers master the Data Lakehouse ecosystem."
-    }
-  ]
+  "@type": "WebSite",
+  "name": "Alex Merced Media",
+  "url": "https://alexmercedmedia.com",
+  "description": SITE_DESCRIPTION,
+  "author": { "@id": "https://alexmerced.com/#alexmerced" },
+  "publisher": { "@id": "https://alexmerced.com/#alexmerced" }
 };
+
+const headScripts = getNetworkHeadScripts();
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CtaStrip from '@/components/CtaStrip';
 
 export default function RootLayout({
   children,
@@ -103,6 +80,14 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();`,
           }}
         />
+        {/* Network head (GA4, event listener, Person JSON-LD) from network/network-head.html */}
+        {headScripts.map(({ attrs, content }, i) =>
+          attrs.src ? (
+            <script key={i} {...attrs} />
+          ) : (
+            <script key={i} {...attrs} dangerouslySetInnerHTML={{ __html: content }} />
+          )
+        )}
       </head>
       <body className={inter.variable}>
         <script
@@ -111,6 +96,7 @@ export default function RootLayout({
         />
         <Header />
         {children}
+        <CtaStrip />
         <Footer />
         {/* WebMCP: read-only tools for browser AI agents. Progressive
             enhancement; config lives in public/webmcp/init.js */}

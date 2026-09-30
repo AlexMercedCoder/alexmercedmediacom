@@ -1,49 +1,5 @@
 import styles from './Footer.module.css';
-
-const NETWORK = [
-    {
-        title: 'Alex Merced',
-        sites: [
-            { label: 'AlexMerced.com', url: 'https://alexmerced.com' },
-            { label: 'WhoIsAlexMerced.com', url: 'https://whoisalexmerced.com' },
-            { label: 'Books', url: 'https://books.alexmerced.com' },
-            { label: 'Resources.AlexMerced.com', url: 'https://resources.alexmerced.com' },
-            { label: 'Branding.AlexMerced.com', url: 'https://branding.alexmerced.com' },
-            { label: 'AlexMercedCoder.dev', url: 'https://alexmercedcoder.dev' },
-            { label: 'AlexMercedData.com', url: 'https://alexmerceddata.com' },
-        ],
-    },
-    {
-        title: 'Lakehouse & Data',
-        sites: [
-            { label: 'DataLakehouseHub.com', url: 'https://datalakehousehub.com' },
-            { label: 'DataLakehouse.help', url: 'https://datalakehouse.help' },
-            { label: 'IcebergLakehouse.com', url: 'https://iceberglakehouse.com' },
-            { label: 'AgenticLakehouse.com', url: 'https://agenticlakehouse.com' },
-            { label: 'AgenticAnalyticsNow.com', url: 'https://agenticanalyticsnow.com' },
-            { label: 'OpenAgenticPlatform.com', url: 'https://openagenticplatform.com' },
-            { label: 'AlexMercedAI.com', url: 'https://www.alexmercedai.com' },
-            { label: 'DataAIWiki.com', url: 'https://dataaiwiki.com' },
-            { label: 'SemanticLakehouse.com', url: 'https://semanticlakehouse.com' },
-            { label: 'OpenLakehouse.AlexMerced.com', url: 'https://openlakehouse.alexmerced.com' },
-            { label: 'OpenDataLakehouse.com', url: 'https://opendatalakehouse.com' },
-            { label: 'DataEngnr.com', url: 'https://dataengnr.com' },
-            { label: 'WeekOfData.com', url: 'https://weekofdata.com' },
-        ],
-    },
-    {
-        title: 'Blogs',
-        sites: [
-            { label: 'AlexMerced.blog', url: 'https://alexmerced.blog' },
-            { label: 'Tuts.AlexMercedCoder.dev', url: 'https://tuts.alexmercedcoder.dev' },
-            { label: 'GrokOverflow.com', url: 'https://grokoverflow.com' },
-            { label: 'IngestThis.com', url: 'https://ingestthis.com' },
-            { label: 'AlexMercedMusic.com', url: 'https://alexmercedmusic.com' },
-            { label: 'AlexMercedLibertarian.com', url: 'https://alexmercedlibertarian.com' },
-            { label: 'D6Storyteller.AlexMerced.com', url: 'https://d6storyteller.alexmerced.com' },
-        ],
-    },
-];
+import { network } from '@/lib/network';
 
 const COMMUNITY = [
     {
@@ -91,19 +47,25 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
-                <nav className={styles.run} aria-label="The Alex Merced Network">
-                  <h2 className={styles.runTitle}>The Alex Merced Network</h2>
-                  <ul className={styles.runList}>
-                    {NETWORK.flatMap((g) => g.sites)
-                      .filter((s) => s.url !== "https://alexmercedmedia.com")
-                      .map((site) => (
-                        <li key={site.url}>
-                          <a href={site.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                            {site.label}
-                          </a>
-                        </li>
-                      ))}
-                  </ul>
+                <nav className={styles.network} aria-label="The Alex Merced Network">
+                  <h2 className={styles.networkTitle}>The Alex Merced Network</h2>
+                  <div className={styles.networkGrid}>
+                    {network.footer.groups.map((group) => (
+                      <div key={group.title}>
+                        <h3 className={styles.groupTitle}>{group.title}</h3>
+                        <ul className={styles.groupList}>
+                          {group.links.map((link) => (
+                            <li key={link.url}>
+                              <a href={link.url} className={styles.link}>{link.title}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                  <p className={styles.allSites}>
+                    <a href={network.footer.allSitesUrl} className={styles.link}>{network.footer.allSitesLabel}</a>
+                  </p>
                 </nav>
 
                 <nav className={styles.run} aria-label="Events and community">

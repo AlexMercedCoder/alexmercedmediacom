@@ -124,3 +124,8 @@
     text-overflow: ellipsis;
   }
 }
+
+.allSites {
+    margin-top: var(--space-6);
+    font-weight: 600;
+}
