@@ -97,7 +97,7 @@ export default async function Home() {
           <div className={styles.heroContent}>
             <span className={styles.eyebrow}>Alex Merced Media</span>
             <h1 className={styles.heroTitle}>
-              Videos, podcasts and articles by <span className={styles.highlight}>Alex Merced</span>.
+              Videos, podcasts and articles by <span className={styles.highlight}>Alex Merced</span>, in one feed.
             </h1>
             <p className={styles.heroSubtitle}>
               New episodes and posts from every channel Alex publishes on, pulled in from their feeds. Most of it covers Apache Iceberg, the data lakehouse, agentic analytics and data engineering. Alex is Head of Developer Relations at Dremio.

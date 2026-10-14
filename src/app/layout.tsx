@@ -10,8 +10,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_TITLE = "Alex Merced Media: Videos, Podcasts and Articles";
-const SITE_DESCRIPTION = "Videos, podcasts, articles and books by Alex Merced, Head of Developer Relations at Dremio, on Apache Iceberg, the data lakehouse, agentic analytics and data engineering.";
+const SITE_TITLE = "Alex Merced Videos, Podcasts and Articles | One Feed";
+const SITE_DESCRIPTION = "Alex Merced's latest videos, podcast episodes and articles in one feed: YouTube tutorials and talks, three podcasts, and his blog, Substack and Medium posts.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alexmercedmedia.com"),

@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { page } = await params;
-    const title = `Articles & Blog Posts, Page ${page} | Alex Merced Media`;
+    const title = `Alex Merced Articles, Page ${page} | Alex Merced Media`;
     const description = `Page ${page} of the articles and blog posts by Alex Merced on data engineering, Apache Iceberg, the data lakehouse and agentic analytics.`;
     return {
         title,

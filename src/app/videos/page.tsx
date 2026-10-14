@@ -5,11 +5,11 @@ import { MEDIA_DATA } from '@/lib/data';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Videos | Alex Merced Media',
-    description: "Watch the latest videos by Alex Merced: tutorials and talks on the data lakehouse, Apache Iceberg, Apache Polaris, query engines, and agentic analytics.",
+    title: 'Alex Merced Videos and Talks | Alex Merced Media',
+    description: "Alex Merced videos and talks from his YouTube channels: tutorials on Apache Iceberg, the data lakehouse, Apache Polaris, query engines and agentic analytics.",
     alternates: { canonical: '/videos' },
     openGraph: {
-        title: 'Videos | Alex Merced Media',
+        title: 'Alex Merced Videos and Talks | Alex Merced Media',
         description: 'The latest videos by Alex Merced on the data lakehouse, Apache Iceberg, and agentic analytics.',
         url: 'https://alexmercedmedia.com/videos',
         type: 'website',
