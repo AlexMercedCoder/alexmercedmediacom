@@ -108,7 +108,10 @@ export default async function Home() {
             </div>
           </div>
           <div className={styles.heroImageWrapper}>
-            <img src="/hero.png" alt="Alex Merced Speaking" className={styles.heroImageSaaS} />
+            <picture>
+              <source type="image/webp" srcSet="/hero-640.webp 640w, /hero-1024.webp 1024w" sizes="(max-width: 900px) min(100vw, 600px), 50vw" />
+              <img src="/hero.png" alt="Alex Merced Speaking" className={styles.heroImageSaaS} width={1024} height={682} fetchPriority="high" decoding="async" />
+            </picture>
             <div className={styles.heroBlob}></div>
           </div>
         </div>

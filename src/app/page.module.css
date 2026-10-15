@@ -107,11 +107,20 @@
 /* Hero Image Right Side */
 .heroImageWrapper {
   position: relative;
+  /* Full column width even before the image loads (auto margins on mobile
+     would otherwise shrink it to zero and shift the layout). */
+  width: 100%;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   aspect-ratio: 4/3;
   background: var(--color-surface);
+}
+
+.heroImageWrapper picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .heroImageSaaS {
